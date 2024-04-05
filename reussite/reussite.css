@@ -1,0 +1,13 @@
+* {
+    background-image: url('../../img/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+p {
+    letter-spacing: 2px;
+    color: rgb(0, 179, 0);
+    font-size: 20px;
+}

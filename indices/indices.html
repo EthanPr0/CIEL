@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indices</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <br>
+
+    <h1 class="text-center">Indices</h1>
+
+    <br>
+
+    <h4 class="text-center">Faille N°1 : Gain d'accès (Déobfuscation)</h4>
+
+    <p class="text-center px-5">Pour cette première vulnérabilité c'est au niveau du javascript que ça va se jouer.
+        Commence par ouvrir les outils développeurs de ton naviguateur (Touche F12). Puis va dans l'onglet sources et
+        dans le dossier js. Clique sur le fichier script.js.
+    </p>
+
+    <div class="text-center">
+        <img src="./../img/indices/1.PNG" alt="">
+    </div>
+
+    <br>
+
+    <p class="text-center px-5">On peut voir la première variable "op" qui stocke une chaine de caractères obfusqué. Et
+        en dessous la fonction "dpf(obfuscated)" qui permet une désobfuscation. Désormais nous avons compris la logique
+        du script,
+        il n'y a pas qu'à l'exploiter !
+    </p>
+
+    <br>
+
+    <h4 class="text-center">Faille N°2 : Cracker le hash (Escalade de privilèges)</h4>
+
+    <p class="text-center px-5">Pour la seconde vulnérabilité il s'agit d'un hash, soit un mot de passe crypté via un
+        algorithme, pour savoir de quel type de hash il s'agit on se rend sur
+        <a href="https://hashes.com/en/tools/hash_identifier">hashes.com</a> et le résultat de l'identification est MD5.
+    </p>
+
+    <div class="text-center">
+        <img src="./../img/indices/2.PNG" alt="">
+    </div>
+
+    <p class="text-center px-5">Maintenant il faut cracker le hash pour obtenir le mot de passe en clair, on va se
+        rendre sur <a href="https://crackstation.net/">crackstation.net</a> ou utiliser un crackeur de hash md5 sur
+        github pour obtenir le mot de passe.
+    </p>
+
+    <br>
+
+    <h4 class="text-center">Faille N°3 : Osint (Accès privilégié direct)</h4>
+
+    <p class="text-center px-5">Pour cette troisième faille je vous laisse la trouver par vous même. Ce n'est pas une
+        vulnérabilité qui requiert des connaissances techniques mais juste de la logique. L'osint est la recherche
+        d'informations et l'exploitation de vulnérabilités humaine. Tel qu'un nom, un email, un numéro ou encore un mot
+        de passe lié à sa vie privée...
+    </p>
+
+    <br>
+
+</body>
+
+</html>
